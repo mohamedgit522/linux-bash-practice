@@ -2,7 +2,7 @@
 
 This repository contains my solutions for two learning paths:
 
-- **Linux (OverTheWire Bandit)**: Levels 0 → 13 — Linux challenges focused on file system navigation, permissions, processes, networking, text processing, and more.
+- **Linux (OverTheWire Bandit)**: Levels 0 → 12 — Linux challenges focused on file system navigation, permissions, processes, networking, text processing, and more.
 - **Bash (Battle Arena)**: Levels 1 → 10 — Bash scripting challenges to practice fundamental scripting concepts and automation.
 
 ---
