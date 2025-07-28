@@ -1,39 +1,27 @@
-# Linux & Bash Practice
+[200~## Linux & Bash Practice
 
 This repository contains my solutions for two learning paths:
 
-- **Linux (OverTheWire Bandit)**: Levels 1–12 — Linux challenges focused on file systems, permissions, processes, networking, and more.  
-- **Bash (Battle Arena)**: Levels 1–10 — Bash scripting challenges that practice fundamental scripting concepts and automation.
+- **Linux (OverTheWire Bandit)**: Levels 0 → 13 — Linux challenges focused on file system navigation, permissions, processes, networking, text processing, and more.
+- **Bash (Battle Arena)**: Levels 1 → 10 — Bash scripting challenges to practice fundamental scripting concepts and automation.
 
 ---
 
 ## Repository Structure
 
-# Linux & Bash Practice
-
-This repository contains my solutions and notes for:
-
-- **Linux (OverTheWire Bandit)**: Levels 1–12  
-- **Bash (Battle Arena)**: Levels 1–10
-
----
-
-## Structure
-
-- `bash_battle_arena/` — Scripts organized by level and task  
-- `linux_over_the_wire_bandit/` — Solutions organized by Bandit level  
+- `bash_battle_arena/` — Bash scripting challenge scripts organized by level and task  
+- `linux_over_the_wire_bandit/` — OverTheWire Bandit solutions organized as level-to-level scripts
 
 ---
 
 ## Skills Demonstrated
 
-- Linux file system navigation  
-- File and directory management  
-- Permissions & processes  
-- Bash scripting fundamentals  
-- Loops, conditionals, and functions  
-- Argument parsing and automation with scripts  
-- Monitoring and logging file system events  
+- Linux file system navigation and management  
+- File permissions and ownership exploration  
+- Network service discovery and analysis  
+- Text processing with grep, sort, uniq, base64, tr, strings, and hexdump  
+- Bash scripting fundamentals: loops, conditionals, argument parsing, and automation  
+- Monitoring file system events and logging
 
 ---
 
@@ -41,76 +29,32 @@ This repository contains my solutions and notes for:
 
 ### Bash Battle Arena
 
-- **Level 1: Create Arena**  
-  Create a directory `Arena` and three files inside it, then list contents.
-
-- **Level 2: Print Numbers**  
-  Write a script to print numbers 1 through 10, one per line.
-
-- **Level 3: Check Hero**  
-  Check if a file named `hero.txt` exists and print a message accordingly.
-
-- **Level 4: Copy Text Files**  
-  Copy all `.txt` files from `Arena` to a `Backup` directory.
-
-- **Level 5: Boss Battle 1**  
-  Combine skills to create a `Battlefield` directory, create files, move files conditionally, and list contents.
-
-- **Level 6: Count Lines Argument**  
-  Write a script that accepts a filename argument and counts the lines, or warns if no filename given.
-
-- **Level 7: Sort Text Files by Size**  
-  Sort `.txt` files by size and display the sorted list.
-
-- **Level 8: Multi-file Searcher**  
-  Search `.log` files for a specific word/phrase and output filenames containing it.
-
-- **Level 9: Monitor Directory**  
-  Watch a directory for file changes and log changes with timestamps.
-
-- **Level 10: Boss Battle 2**  
-  Create files with random lines, sort by size, and archive files containing a keyword.
+- **Level 1: Create Arena** — Create directory and files, list contents  
+- **Level 2: Print Numbers** — Script to print numbers 1–10  
+- **Level 3: Check Hero** — Check for file existence and conditionally print  
+- **Level 4: Copy Text Files** — Copy `.txt` files between directories  
+- **Level 5: Boss Battle 1** — Combine file and directory operations  
+- **Level 6: Count Lines Argument** — Script counting lines of a given file  
+- **Level 7: Sort Text Files by Size** — Sort and display `.txt` files by size  
+- **Level 8: Multi-file Searcher** — Search multiple `.log` files for a phrase  
+- **Level 9: Monitor Directory** — Watch and log directory changes  
+- **Level 10: Boss Battle 2** — File creation, sorting, and archiving based on content  
 
 ---
 
 ### OverTheWire Bandit
 
-- **Level 1: No More Boring Password**  
-  Gain initial access by reading a file containing the password.
-
-- **Level 2: Shell Basics**  
-  Navigate the filesystem, read files, and use basic shell commands.
-
-- **Level 3: File Permissions**  
-  Explore file permissions to find the password.
-
-- **Level 4: Listening Ports**  
-  Discover services running on network ports.
-
-- **Level 5: File and Directory Operations**  
-  Practice working with files and directories.
-
-- **Level 6: Reading Files**  
-  Use different commands to read contents of files and understand permissions.
-
-- **Level 7: File Permissions (Part 2)**  
-  Further explore tricky file permission scenarios to access the password.
-
-- **Level 8: Network Protocols**  
-  Analyze network protocols and discover hidden data.
-
-- **Level 9: Cracking Passwords**  
-  Learn basic password cracking and hash decryption techniques.
-
-- **Level 10: Privilege Escalation**  
-  Gain higher privileges to access restricted files.
-
-- **Level 11: More Privileges**  
-  Exploit special files and configurations to continue privilege escalation.
-
-- **Level 12: Final Challenge**  
-  Combine all learned skills to solve the last and toughest challenge in Bandit.
-
----
-
+- **Level 0 → 1:** Password in file called `readme` in home directory  
+- **Level 1 → 2:** Password in file named `-` in home directory  
+- **Level 2 → 3:** Password in file named `spaces in this filename`  
+- **Level 3 → 4:** Password in hidden file inside `inhere` directory  
+- **Level 4 → 5:** Password in only human-readable file in `inhere`  
+- **Level 5 → 6:** Password in human-readable, 1033-byte, non-executable file under `inhere`  
+- **Level 6 → 7:** Password in file owned by user `bandit7` and group `bandit6`, 33 bytes  
+- **Level 7 → 8:** Password next to word "millionth" in `data.txt`  
+- **Level 8 → 9:** Password is the only unique line in `data.txt`  
+- **Level 9 → 10:** Password in human-readable string preceded by "====" in `data.txt`  
+- **Level 10 → 11:** Password is base64-decoded content of `data.txt`  
+- **Level 11 → 12:** Password is ROT13-decoded content of `data.txt`  
+- **Level 12 → 13:** Password in repeatedly compressed hexdump file `data.txt`; decompress iteratively in a temporary working directory  
 
