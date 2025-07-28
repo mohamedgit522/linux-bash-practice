@@ -1,4 +1,4 @@
-## Linux & Bash Practice
+## Linux & Bash Practice
 
 This repository contains my solutions for two learning paths:
 
